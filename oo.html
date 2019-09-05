@@ -10,238 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/da49c1669f.js"></script>
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
     <title>test</title>
-    <style type="text/css">
-        html {
-            scroll-behavior: smooth;
-        }
 
-        .vertical-nav {
-            min-width: 27rem;
-            width: 27rem;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s;
-
-        }
-
-        @media (max-width: 768px) {
-            #sideNav {
-                margin-left: -27rem;
-            }
-
-            #sideNav.active {
-                margin-left: 0;
-            }
-
-            #content {
-                width: 100%;
-                margin: 0;
-            }
-
-            #content.active {
-                margin-left: 17rem;
-                width: calc(100% - 17rem);
-            }
-        }
-
-        .page-content {
-            position: relative;
-            width: calc(100% - 27rem);
-            margin-left: 27rem;
-            transition: all 0.4s;
-            overflow-y: scroll;
-            height: 100vh;
-
-        }
-
-        .separator {
-            margin: 3rem 0;
-            border-bottom: 1px dashed #fff;
-        }
-
-        .apple div {
-            height: 100vh;
-        }
-
-        header {
-            position: relative;
-            background-image: url(Images/bg.jpeg);
-            background-position: center;
-            height: 100vh;
-            background-size: cover;
-            text-align: center;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .header-content {
-
-            position: absolute;
-
-            padding: 0 50px;
-
-
-        }
-
-        /* .header-content-inner{
-            display: block;
-        } */
-
-        body {
-            position: relative;
-        }
-
-        .bg-primary {
-            background-color: #910d0dcc !important;
-        }
-
-        .resize {
-            position: relative;
-            max-width: 150px;
-            max-height: 100px;
-            margin-top: 15px;
-            margin-bottom: 20px;
-            margin-left: 13px;
-            margin-right: 13px;
-            padding: 5px;
-
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .portfolioImg {
-            width: 500px;
-            height: 250px;
-            margin: 10px;
-            padding: 10px;
-        }
-
-        #portfolio {
-            display: flex;
-
-        }
-
-        #navHead {
-
-            background-color: #200f0fcc !important;
-
-            height: 25vh;
-        }
-
-        .person {
-            text-align: center;
-        }
-
-        .person .person-avatar {
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .avatar img {
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            border: 0%;
-        }
-
-        .media-body {
-            text-align: center;
-            margin-top: 20px;
-
-        }
-
-        .active {
-
-            background-color: #910d0dcc !important;
-        }
-
-        #sideNav a {
-
-            color: rgb(10, 2, 2);
-
-        }
-
-        .media-body h2 {
-            color: #910d0dcc;
-        }
-
-        #name {
-            margin-top: 40px;
-            font-size: 6vh;
-            color: #910d0dcc;
-        }
-
-        .header-content-inner .btn {
-            border: 0;
-            border-radius: 300px;
-            text-transform: uppercase;
-            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 700;
-            margin-bottom: 10px;
-            background-color: #910d0dcc;
-        }
-
-        .contact a {
-            color: #000;
-        }
-
-        @keyframes slideInDown {
-            0% {
-                transform: rotate(0) translateY(-150%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: rotate(0) translateY(0%);
-                opacity: 1;
-            }
-        }
-
-        .slideInDown {
-            animation: slideInDown 1s forwards 0s linear;
-        }
-
-        @keyframes slideInRight {
-            0% {
-                transform: rotate(0) translateX(-100%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: rotate(0) translateX(0%);
-                opacity: 1;
-            }
-        }
-
-        .slideInRight {
-            animation: slideInRight 1s forwards 0s linear;
-        }
-
-        @keyframes slideInUp {
-            0% {
-                transform: rotate(0) translateY(200%);
-                opacity: 0;
-            }
-
-            100% {
-                transform: rotate(0) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .slideInUp {
-            animation: slideInUp 1s forwards 0s linear;
-        }
-    </style>
 </head>
 
 <body>
@@ -307,13 +80,13 @@
 
 
 
-        <div id="about" class="bg-primary">
-            <div class="container col-8">
+        <div id="about" >
+            <div class="jumbotron">
                 <div class="row py-5">
                     <div class="text-center py-3 ">
                         <h1>Welcome to my Page! </h1>
 
-                        <p class="my-5">I am a full stack web developer with a passion for learning and a thirst for
+                        <p class="my-5 justify" >I am a full stack web developer with a passion for learning and a thirst for
                             collaborating with a
                             wide and diverse group of people.
                             Musical composer turned code composer provides interesting parallels to syntax, logic,
@@ -335,66 +108,58 @@
                 <h1 class="pt-5"> My Skills</h1>
                 <hr class="bg-primary w-25">
                 <div class="container">
-                    <div class="row py-5  d-flex justify-content-center">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/html5.png"
-                            alt="HTML5" style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="row py-5  d-flex justify-content-center" id="hoverAni" >
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft "  src="Images/html5.png"
+                            alt="HTML5">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/css3.png"
-                            alt="CSS5" style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/js.png"
-                            alt="JavaScript" style="visibility: visible; animation-name: fadeInRight;">
+                            alt="CSS5">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/js.png"
+                            alt="JavaScript">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/nodejs.png"
-                            alt="NodeJs" style="visibility: visible; animation-name: fadeInRight;">
+                            alt="NodeJs">
 
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/jquery.png"
-                            alt="JQuery" style="visibility: visible; animation-name: fadeInRight;">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/jquery.png"
+                            alt="JQuery">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/php.svg"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/Boostrap_logo.svg" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
+                            alt="PHP" >
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/Boostrap_logo.svg" alt="Bootstrap">
 
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/angular.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
+                            alt="Angular">
+
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft"
+                            src="Images/googleDev.png" alt="Google Developer">
 
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/googleDev.png" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
+                            src="Images/android-studio.png" alt="Android Studio">
 
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/android-studio.png" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
-
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/java.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/java.png"
+                            alt="Java">
 
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/python.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/awscloud.svg" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
+                            alt="Python">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft"
+                            src="Images/awscloud.svg" alt="AWS">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/cSharp.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/unity.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
+                            alt="C#">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/unity.png"
+                            alt="Unity">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/heroku.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/github.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
+                            alt="Heroku App">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/github.png"
+                            alt="Github">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/bitbucket.png" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/json-logo.png" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
+                            src="Images/bitbucket.png" alt="BitBucket">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft"
+                            src="Images/json-logo.png" alt="JSON">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/mysql.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/sqlite.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
+                            alt="MySql">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft" src="Images/sqlite.png"
+                            alt="SQlite">
                         <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight" src="Images/ajax.png"
-                            alt="..." style="visibility: visible; animation-name: fadeInRight;">
-                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInRight"
-                            src="Images/wordpress.png" alt="..."
-                            style="visibility: visible; animation-name: fadeInRight;">
+                            alt="AJAX">
+                        <img class="col-md-3 col-md-3 col-sm-3 col-xs-6 resize wow fadeInLeft"
+                            src="Images/wordpress.png" alt="WordPress">
 
 
                     </div>
@@ -479,22 +244,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-
-
-        <script>
-            $(function () {
-                // Sidebar toggle behavior
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar, #content').toggleClass('active');
-                });
-            });
-            window.scrollBy({
-                top: 2500,
-                left: 0,
-                behavior: "smooth"
-            })
-
-        </script>
+        <script src="main.js"></script>
 </body>
 
 </html>

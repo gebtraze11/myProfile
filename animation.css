@@ -1,0 +1,151 @@
+@keyframes slideInDown {
+    0% {
+        transform: rotate(0) translateY(-150%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0) translateY(0%);
+        opacity: 1;
+    }
+}
+
+.slideInDown {
+    animation: slideInDown 1s forwards 0s linear;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: rotate(0) translateX(-100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0) translateX(0%);
+        opacity: 1;
+    }
+}
+
+.slideInRight {
+    animation: slideInRight 1s forwards 0s linear;
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: rotate(0) translateY(200%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+.slideInUp {
+    animation: slideInUp 1s forwards 0s linear;
+}
+
+.slideInDown {
+    animation: slideInDown 1s forwards 0s linear;
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: rotate(0) translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) translateX(0%);
+        opacity: 1;
+    }
+}
+.fadeInRight {
+    animation: fadeInRight 1.5s forwards 0s linear;
+}
+@keyframes fadeInLeft {
+    0% {
+        transform: rotate(0) translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) translateX(0%);
+        opacity: 1;
+    }
+}
+.fadeInLeft{
+    animation: fadeInLeft 2s forwards 0s linear;
+}
+
+@keyframes hoverAni{
+    0%{
+        transform: rotate(0) translateX(-20%);
+        }
+    5%{
+        transform: rotate(0) translateX(20%);
+        }
+    10%{
+        transform: rotate(0) translateX(-20%);
+        }
+    15%{
+        transform: rotate(0) translateX(20%);
+        }
+    20%{
+        transform: rotate(0) translateX(-20%);
+        }
+    25%{
+        transform: rotate(0) translateX(20%);
+        }
+    30%{
+        transform: rotate(0) translateX(-20%);
+        }
+    35%{
+        transform: rotate(0) translateX(20%);
+        }
+    40%{
+        transform: rotate(0) translateX(-20%);
+        }
+    45%{
+        transform: rotate(0) translateX(20%);
+        }
+    50%{
+        transform: rotate(0) translateX(-20%);
+        }
+    55%{
+        transform: rotate(0) translateX(20%);
+        }
+    60%{
+        transform: rotate(0) translateX(-20%);
+        }
+    65%{
+        transform: rotate(0) translateX(20%);
+        }
+    70%{
+        transform: rotate(0) translateX(-20%);
+        }
+    75%{
+        transform: rotate(0) translateX(20%);
+        }
+    80%{
+        transform: rotate(0) translateX(-20%);
+        }
+    85%{
+        transform: rotate(0) translateX(20%);
+        }
+    90%{
+        transform: rotate(0) translateX(-20%);
+        }
+    95%{
+        transform: rotate(0) translateX(20%);
+        }
+    100%{
+        transform: rotate(0) translateX(-20%);
+        }
+
+}
+
+.hoverAni{
+    animation: hoverAni 3s forwards 0s linear;
+}

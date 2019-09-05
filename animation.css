@@ -141,11 +141,11 @@
         transform: rotate(0) translateX(20%);
         }
     100%{
-        transform: rotate(0) translateX(-20%);
+        transform: rotate(0) translateX(0%);
         }
 
 }
 
 .hoverAni{
-    animation: hoverAni 3s forwards 0s linear;
+    animation: hoverAni 3s infinite 0s linear;
 }

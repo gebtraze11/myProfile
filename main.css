@@ -188,9 +188,6 @@ body {
     padding-left: 30%;
     padding-right: 30%;
 }
-/* .hoverAni img {
+ #hoverAni img {
     animation-play-state: paused;
 }
-.hoverAni img:hover {
-    animation-play-state: running;
-} */
